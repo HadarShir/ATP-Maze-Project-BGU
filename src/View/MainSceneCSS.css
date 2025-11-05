@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.ttf');
+}
+
+.root, .label, .button, .text-field, .menu, .menu-item, .radio-button, .check-box, .text {
+    -fx-font-family: 'Orbitron';
+}
+
+Button {
+    -fx-font-size: 32;
+    -fx-text-fill: #FF00CC;
+    -fx-font-weight: bold;
+    -fx-font-style: oblique  ;
+    -fx-font-smoothing-type: lcd;
+    -fx-background-color: linear-gradient(#2f0033, #1a001f);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 0, 255, 0.5), 8, 0.0, 0, 2);
+
+    -fx-border-color: #ff00cc;
+    -fx-border-width: 3 3 3 3;
+
+    /*-fx-background-size: 500;*/
+    -fx-background-size: 1000px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+
+Label {
+    -fx-text-fill: #FF00CC;
+    -fx-background-color: linear-gradient(rgba(47, 0, 51, 0), rgba(26, 0, 31, 0));
+    -fx-border-color: rgba(255, 0, 204, 0);
+    -fx-border-width: 3 3 3 3;
+}
+
+CheckBox{
+    -fx-text-fill: #FF00CC;
+    -fx-background-color: linear-gradient(rgba(47, 0, 51, 0), rgba(26, 0, 31, 0));
+    -fx-border-color: rgba(255, 0, 204, 0);
+    -fx-border-width: 3 3 3 3;
+}
+
+RadioButton{
+    -fx-text-fill: #FF00CC;
+    -fx-background-color: linear-gradient(rgba(47, 0, 51, 0), rgba(26, 0, 31, 0));
+    -fx-border-color: rgba(255, 0, 204, 0);
+    -fx-border-width: 3 3 3 3;
+}
+
+Text{
+    -fx-background-color: linear-gradient(#2f0033, #1a001f);
+    -fx-border-color: #ff00cc;
+    -fx-border-width: 3 3 3 3;
+}
