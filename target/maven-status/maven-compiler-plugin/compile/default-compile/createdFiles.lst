@@ -1,0 +1,13 @@
+Model\IModel.class
+ViewModel\MyViewModel.class
+Model\MovementDirection.class
+View\MainSceneController.class
+View\Main.class
+Model\MyModel$2.class
+View\MazeDisplay.class
+ViewModel\MyViewModel$1.class
+View\MyViewController.class
+Model\MyModel$1.class
+Model\MyModel.class
+View\IView.class
+Model\MyModel$3.class

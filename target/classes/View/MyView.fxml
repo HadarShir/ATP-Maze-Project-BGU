@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import View.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+
+    <center>
+        <StackPane fx:id="main_pane">
+            <ImageView fx:id="mainImageView" fitHeight="592.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <image>
+                    <Image url="@/images/BackgroundGif.gif" />
+                </image>
+            </ImageView>
+            <MazeDisplay fx:id="mazeDisplayer" />
+        </StackPane>
+    </center>
+
+    <top>
+        <VBox>
+            <MenuBar fx:id="menuBar" prefWidth="832.0">
+                <Menu text="File">
+                    <MenuItem fx:id="backMenuItem" onAction="#handleBack" text="New" />
+                    <MenuItem fx:id="saveMenuItem" onAction="#handleSaveMaze" text="Save" />
+                </Menu>
+                <Menu text="Properties">
+                    <MenuItem fx:id="propertiesMenuItem" onAction="#handleProperties" text="Properties" />
+                </Menu>
+                <Menu text="Help">
+                    <MenuItem fx:id="helpMenuItem" onAction="#handleHelp" text="Help" />
+                    <MenuItem fx:id="aboutMenuItem" onAction="#handleAbout" text="About" />
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <Button fx:id="toggleSolutionButton" onAction="#handleToggleSolution" text="Show Solution" />
+                <Button fx:id="togglePathButton" onAction="#handleTogglePlayerPath" text="Hide Path" />
+                <Button fx:id="toggleSoundButton" onAction="#handleToggleSound" text="Mute" />
+            </ToolBar>
+        </VBox>
+    </top>
+
+    <bottom>
+        <Label fx:id="statusLabel" text="Ready to generate maze..." />
+    </bottom>
+
+</BorderPane>
